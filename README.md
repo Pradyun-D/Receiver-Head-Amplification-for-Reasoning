@@ -23,7 +23,7 @@ Following the "Thought Anchors" framework, receiver heads were identified by cal
 <img width="687" height="688" alt="Kurtosis Distribution Graph" src="https://github.com/user-attachments/assets/56741c0f-9f23-4415-9880-c9e5c6e24fa5" />
 
 ### 3️⃣ Amplification Setup
-We implemented **pre-forward hooks** to intercept and scale the attention outputs (the input to the O-projection) during inference.
+**Pre-forward hooks** were used to intercept and scale the attention outputs (the input to the O-projection) during inference.
 * **Scaling Factors:** `1.2x`, `1.5x`, `5x`, and `10x`.
 * **Inference Config:** Top-p sampling with a max token limit of **4,096** to capture full reasoning traces.
 
@@ -69,7 +69,7 @@ Static amplification of receiver heads is insufficient for enhancing reasoning p
 
 ---
 
-> ℹ️ **For more detailed information, technical analysis, and extended data, see the full project document:** > [Project Documentation](https://docs.google.com/document/d/1UQjBcAoQXHl7rdWCyTFYGyXSTBupzp68ljiSLdioK64/edit?tab=t.0)
+> ℹ️ **For more detailed information, technical analysis, and extended data, see the full project document:** > [Project Documentation](https://docs.google.com/document/d/1UQjBcAoQXHl7rdWCyTFYGyXSTBupzp68ljiSLdioK64/edit?usp=sharing)
 
 ---
 *Inspired by the research framework in: [Thought Anchors: Which LLM Reasoning Steps Matter?](https://arxiv.org/abs/2506.19143)*
